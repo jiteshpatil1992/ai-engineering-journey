@@ -1,0 +1,22 @@
+[project]
+name = "ai-engineering-journey"
+version = "0.1.0"
+description = "A project-based journey to becoming a production-ready AI Engineer"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+ai-engineering-journey = "ai_engineering_journey:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.7.0",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "ruff>=0.17.0",
+]
